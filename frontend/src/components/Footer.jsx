@@ -1,6 +1,6 @@
-import React from 'react'
-import Logo from '../assets/limaCodes.svg'
-import Lime from '../assets/limeOnly.png'
+import React from 'react';
+import Logo from '/assets/limaCodes.svg';
+import Lime from '/assets/limeOnly.png';
 
 export default function Footer() {
   return (
@@ -24,7 +24,11 @@ export default function Footer() {
               title="Company"
               className="inline-flex items-center"
             >
-              <img src={Lime} alt="Lime" className="w-8 text-deep-purple-accent-400" />
+              <img
+                src={Lime}
+                alt="Lime"
+                className="w-8 text-deep-purple-accent-400"
+              />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                 <img src={Logo} alt="logo" />
               </span>
@@ -249,5 +253,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  )
+  );
 }

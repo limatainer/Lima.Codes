@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Logo from '../assets/limaCodesGreen.svg'
-import Lime from '../assets/limeOnly.png'
+import Logo from '/assets/limaCodesGreen.svg';
+import Lime from '/assets/limeOnly.png';
 
-export const Nav = () => {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -12,13 +12,13 @@ export const Nav = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a
-              href="/"
+              href="#"
               aria-label="Our product"
               title="Our product"
               className="font-medium tracking-wide text-gray-700 
               transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
-              Cursos
+              Apresentação
             </a>
           </li>
           <li>
@@ -32,17 +32,6 @@ export const Nav = () => {
               Formações
             </a>
           </li>
-          <li>
-            <a
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 
-              transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Artigos
-            </a>
-          </li>
         </ul>
         <a
           href="/"
@@ -50,7 +39,11 @@ export const Nav = () => {
           title="Company"
           className="inline-flex items-center"
         >
-          <img src={Lime} alt="Lime" className="w-8 text-deep-purple-accent-400" />
+          <img
+            src={Lime}
+            alt="Lime"
+            className="w-8 text-deep-purple-accent-400"
+          />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
             <img src={Logo} alt="logo" />
           </span>
@@ -74,16 +67,6 @@ export const Nav = () => {
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Contato
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              aria-label="Reservar"
-              title="Reservar"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Reservar
             </a>
           </li>
         </ul>
@@ -120,7 +103,11 @@ export const Nav = () => {
                       title="Company"
                       className="inline-flex items-center"
                     >
-                      <img src={Lime} alt="Lime" className="w-8 text-deep-purple-accent-400" />
+                      <img
+                        src={Lime}
+                        alt="Lime"
+                        className="w-8 text-deep-purple-accent-400"
+                      />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         <img src={Logo} alt="logo" />
                       </span>
@@ -213,4 +200,4 @@ export const Nav = () => {
       </div>
     </div>
   );
-};
+}
