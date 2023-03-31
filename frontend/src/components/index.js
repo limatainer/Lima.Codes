@@ -1,4 +1,4 @@
-import Navbar from './Navbar'
+import Navbar from './Navbar.jsx'
 import Presentation from './Presentation'
 import Promo from './Promo'
 import Courses from './Courses'
