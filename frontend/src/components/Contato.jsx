@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 export default function Contato() {
+  const baseURL = import.meta.env.VITE_API;
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whats, setWhats] = useState('');
@@ -18,15 +20,13 @@ export default function Contato() {
       Whatsapp: whats,
       Message: message,
     };
-    axios
-      .post('https://sheetdb.io/api/v1/h6vmuhennqqy2', data)
-      .then((response) => {
-        console.log(response);
-        setName('');
-        setEmail('');
-        setMessage('');
-        setWhats('');
-      });
+    axios.post(baseURL, data).then((response) => {
+      console.log(response);
+      setName('');
+      setEmail('');
+      setMessage('');
+      setWhats('');
+    });
   };
 
   return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-const Chatbot = () => {
+export default function Chatbot() {
   const [showChatbot, setShowChatbot] = useState(false);
   const [hideChatbot, setHideChatbot] = useState(true);
   const [inputValue, setInputValue] = useState('');
@@ -80,6 +80,4 @@ const Chatbot = () => {
       )}
     </>
   );
-};
-
-export default Chatbot;
+}
