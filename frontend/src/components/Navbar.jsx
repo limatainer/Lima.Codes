@@ -11,7 +11,7 @@ export default function Navbar() {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a
-              href="#"
+              href="#home"
               aria-label="Our product"
               title="Our product"
               className="font-medium tracking-wide text-gray-700 
@@ -50,7 +50,7 @@ export default function Navbar() {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a
-              href="/"
+              href="#about"
               aria-label="About us"
               title="About us"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -60,7 +60,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="/"
+              href="#contato"
               aria-label="Sign in"
               title="Sign in"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -162,7 +162,7 @@ export default function Navbar() {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#about"
                         aria-label="About us"
                         title="About us"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -172,7 +172,7 @@ export default function Navbar() {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="##contato"
                         aria-label="Sign in"
                         title="Sign in"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

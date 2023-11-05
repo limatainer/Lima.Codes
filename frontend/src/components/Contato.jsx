@@ -30,9 +30,8 @@ export default function Contato() {
   };
 
   return (
-    <div className="p-4 bg-slate-50">
+    <div id="contato" className="p-4 bg-slate-50">
       <form
-        id="contato"
         className="max-w-md mx-auto my-2 bg-white p-6
        rounded-lg shadow-lg"
         onSubmit={handleSubmit}
